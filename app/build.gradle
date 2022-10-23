@@ -47,6 +47,11 @@ dependencies {
     // ConstraintLayout
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
+    // Navigation
+    def navigation_version = "2.5.2"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+
     // Test
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
