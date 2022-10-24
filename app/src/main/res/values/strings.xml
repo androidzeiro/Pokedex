@@ -5,6 +5,13 @@
     <string name="error_unauthorized_message">Not authorized.</string>
     <string name="error_not_found">Not found.</string>
     <string name="error_network">No Internet connection.\nPlease try again.</string>
-    
+
     <string name="try_again">Try again</string>
+
+    <string name="detail">Pokemon Detail</string>
+    <string name="id">Id: %s</string>
+    <string name="height">Height: %s</string>
+    <string name="weight">Weight: %s</string>
+    <string name="types">Types:%s</string>
+    <string name="abilities">Abilities:%s</string>
 </resources>

@@ -11,5 +11,20 @@
         android:name="br.com.raphael.pokedex.ui.view.pokemons.PokemonsFragment"
         android:label="fragment_pokemons"
         tools:layout="@layout/fragment_pokemons" >
+
+        <action
+            android:id="@+id/action_pokemonsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="br.com.raphael.pokedex.ui.view.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+
+        <argument
+            android:name="pokemon"
+            app:argType="br.com.raphael.pokedex.data.model.response.PokemonDetailResponse" />
     </fragment>
 </navigation>

@@ -3,6 +3,7 @@ package br.com.raphael.pokedex.ui.view.pokemons
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearSnapHelper
 import br.com.raphael.pokedex.R
 import br.com.raphael.pokedex.data.model.dto.State
@@ -55,5 +56,7 @@ class PokemonsFragment : BaseFragment<FragmentPokemonsBinding>(FragmentPokemonsB
         }
     }
 
-    private fun onItemClicked(pokemon: PokemonDetailResponse) {}
+    private fun onItemClicked(pokemon: PokemonDetailResponse) {
+        findNavController().navigate(PokemonsFragmentDirections.actionPokemonsFragmentToDetailFragment(pokemon))
+    }
 }
